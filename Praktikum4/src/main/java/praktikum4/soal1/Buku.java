@@ -5,7 +5,7 @@ public class Buku {
     private String penulis;
     private int tahun;
 
-    public Buku(String j, String p, int t){
+    public Buku(String j, String p, int t) {
         this.judul = j;
         this.penulis = p;
         this.tahun = t;
@@ -23,7 +23,7 @@ public class Buku {
         return tahun;
     }
 
-    public void display(){
+    public void display() {
         System.out.println("Detail Buku:");
         System.out.printf("Judul adalah %s\n", judul);
         System.out.printf("Penulis adalah %s\n", penulis);

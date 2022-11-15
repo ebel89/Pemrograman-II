@@ -3,7 +3,7 @@ package praktikum4.soal2;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String [] args){
+    public static void main(String[] args) {
 
         int pilihan = 0;
         String judul;
@@ -13,16 +13,16 @@ public class Main {
         String tahun;
         int volume;
 
-        do{
-        System.out.println("Pilih buku yang ingin diinputkan:");
-        System.out.println("1 = Novel");
-        System.out.println("2 = Komik");
-        Scanner input = new Scanner(System.in);
+        do {
+            System.out.println("Pilih buku yang ingin diinputkan:");
+            System.out.println("1 = Novel");
+            System.out.println("2 = Komik");
+            Scanner input = new Scanner(System.in);
 
-        System.out.printf("Masukkan Pilihan: ");
+            System.out.printf("Masukkan Pilihan: ");
 
-        pilihan = input.nextInt();
-            if(pilihan == 1){
+            pilihan = input.nextInt();
+            if (pilihan == 1) {
                 input.nextLine();
                 System.out.printf("Judul: ");
                 judul = input.nextLine();
@@ -40,10 +40,10 @@ public class Main {
                 sinopsis = input.nextLine();
                 System.out.println("");
 
-                Novel n = new Novel(judul, penulis, tahun, genre, sinopsis );
+                Novel n = new Novel(judul, penulis, tahun, genre, sinopsis);
                 n.display();
                 System.out.println(n.getNovelDetail());
-            }else if(pilihan == 2){
+            } else if (pilihan == 2) {
                 input.nextLine();
                 System.out.printf("Judul: ");
                 judul = input.nextLine();
@@ -65,12 +65,12 @@ public class Main {
                 Komik k = new Komik(judul, penulis, tahun, volume, sinopsis);
                 k.display();
                 System.out.println(k.getKomikDetail());
-            }else{
+            } else {
                 System.out.println("==================");
                 System.out.println("Tidak ada pilihan");
                 System.out.println("Memilih kembali");
                 System.out.println("==================");
             }
-        }while(pilihan >2 || pilihan <1);
+        } while (pilihan > 2 || pilihan < 1);
     }
 }
