@@ -10,11 +10,11 @@ public class Main {
         LinkedList<Dadu> dadu = new LinkedList<>();
         int masuk = input.nextInt();
 
-        for (int i = 0; i <= masuk; i++){
+        for (int i = 0; i <= masuk; i++) {
             dadu.add(new Dadu());
             dadu.getLast().acakNilai();
         }
-        for (int j = 1; j < dadu.size(); j++){
+        for (int j = 1; j < dadu.size(); j++) {
             System.out.printf("Dadu ke-%d bernilai %d\n", j, dadu.get(j).getAngka());
             total += dadu.get(j).getAngka();
 
