@@ -17,7 +17,7 @@ public class PRAK101_2110817310008_MuhammadKhaliqTeukuAnsari {
       float beratBadan;
       Scanner keyboard = new Scanner(System.in);
 
-      System.out.print("Masukkan Nama Lengkapku: ");
+      System.out.print("Masukkan Nama Lengkapku1: ");
       nama = keyboard.nextLine();
 
       System.out.print("Masukkan Tempat Lahir: ");
